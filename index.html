@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظامي المحاسبي</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <h1>مرحبًا بك في نظامي المحاسبي!</h1>
+        <p>نساعدك على اختيار النظام المثالي لإدارة أعمالك بكل سهولة ودقة</p>
+    </header>
+
+    <main>
+        <!-- قائمة الأنظمة -->
+        <section class="systems">
+            <h2>الأنظمة المحاسبية</h2>
+            <p>تعرف على أبرز الأنظمة المحاسبية المحلية والدولية الموصى بها وفقًا لاحتياجاتك.</p>
+        </section>
+
+        <!-- نموذج خيارات التفضيل -->
+        <section class="preferences">
+            <h2>حدد تفضيلاتك</h2>
+            <form id="preference-form">
+                <label for="company-size">حجم الشركة:</label>
+                <select id="company-size" name="company-size" required>
+                    <option value="">اختر حجم الشركة</option>
+                    <option value="small">صغيرة</option>
+                    <option value="medium">متوسطة</option>
+                    <option value="large">كبيرة</option>
+                </select>
+
+                <label for="features">الميزات المطلوبة:</label>
+                <select id="features" name="features" required>
+                    <option value="">اختر الميزة</option>
+                    <option value="cloud">سحابي</option>
+                    <option value="invoice">الفوترة الإلكترونية</option>
+                    <option value="erp">نظام ERP شامل</option>
+                </select>
+
+                <label for="industry">نوع النشاط:</label>
+                <select id="industry" name="industry" required>
+                    <option value="">اختر نوع النشاط</option>
+                    <option value="retail">تجارة التجزئة</option>
+                    <option value="restaurant">مطاعم وكافيهات</option>
+                    <option value="services">شركات الخدمات</option>
+                    <option value="construction">المقاولات والإنشاءات</option>
+                    <option value="manufacturing">التصنيع والإنتاج</option>
+                </select>
+
+                <label for="budget">ميزانية الشراء:</label>
+                <select id="budget" name="budget" required>
+                    <option value="">اختر ميزانية الشراء</option>
+                    <option value="4000-10000">من 4000 إلى 10000 ريال</option>
+                    <option value=">10000">أعلى من 10000 ريال</option>
+                </select>
+
+                <button type="submit">عرض التوصيات</button>
+            </form>
+        </section>
+
+        <!-- قسم التوصيات -->
+        <section id="recommendations" class="hidden">
+            <h2>توصياتنا لك</h2>
+            <p id="recommendations-text"></p>
+            <ul id="recommendations-list"></ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 - نظامي المحاسبي. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
